@@ -101,7 +101,7 @@ async function deleteButton(id){
               style={styles.button}
               onPress={() => handleLikeRepository(repository.id)}
               // Remember to replace "1" below with repository ID: {`like-button-${repository.id}`}
-              testID={`like-button-1`}
+              testID={`like-button-${repository.id}`}
               >
               <Text style={styles.buttonText}>Curtir</Text>
             </TouchableOpacity>
