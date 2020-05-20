@@ -29,5 +29,17 @@
     "jest": "^25.2.7",
     "metro-react-native-babel-preset": "^0.59.0",
     "react-test-renderer": "16.11.0"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aouza/go-stack-desafio03.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aouza/go-stack-desafio03/issues"
+  },
+  "homepage": "https://github.com/Aouza/go-stack-desafio03#readme",
+  "description": ""
 }
