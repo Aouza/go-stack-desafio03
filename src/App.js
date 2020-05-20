@@ -54,11 +54,11 @@ async function deleteButton(id){
   async function handleLikeRepository(id) {
     const response = await api.post(`/repositories/${id}/like`);
 
-    const { like } = response.data;
+    const { likes } = response.data;
 
     const repositoryIndex = repositories.findIndex(repository => repository.id === id);
 
-    repositories[repositoryIndex].like = like;
+    repositories[repositoryIndex].likes = likes;
 
     setRepositories([...repositories]);
 
@@ -93,7 +93,7 @@ async function deleteButton(id){
                 // Remember to replace "1" below with repository ID: {`repository-likes-${repository.id}`}
                 testID={`repository-likes-${repository.id}`}
               >
-                {repository.likes} curtida{repository.like > 1 ? 's' : ''}
+                {repository.likes} curtida{repository.likes > 1 ? 's' : ''}
               </Text>
             </View>
 
